@@ -1,7 +1,7 @@
 PROJECT := charliekenney23/tf-changelog-validator
 
 CMD_DIR     := cmd
-SCRIPTS_DIR := main
+SCRIPTS_DIR := scripts
 
 MAIN_PKG := $(CMD_DIR)/tf-changelog-validator
 
