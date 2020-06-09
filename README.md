@@ -49,6 +49,6 @@ func main() {
 }
 ```
 
-[test-badge]: https://github.com/Charliekenney23/tf-changelog-validator/workflows/build/badge.svg
+[build-badge]: https://github.com/Charliekenney23/tf-changelog-validator/workflows/build/badge.svg
 [godoc-badge]: https://godoc.org/github.com/Charliekenney23/tf-changelog-validator?status.svg
 [godoc]: https://godoc.org/github.com/Charliekenney23/tf-changelog-validator
