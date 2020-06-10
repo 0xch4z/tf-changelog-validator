@@ -1,21 +1,35 @@
-name-template: 'v$NEXT_PATCH_VERSION'
-tag-template: 'v$NEXT_PATCH_VERSION'
-categories:
-  - title: '🚀 Added'
-    label: 'added-feature'
-  - title: '🧰 Changed'
-    label: 'changed'
-  - title: "⚠️ Deprecated"
-    label: "deprecated"
-  - title: "⚠️ Removed"
-    label: "removed"
-  - title: '🐛 Bug Fixes'
-    label: 'bugfix'
-  - title: "⚠️ Security"
-    label: "security"
-change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-no-changes-template: "- No changes"
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
 template: |
-  ## Changes
+  # What's Changed
 
   $CHANGES
+categories:
+  - title: 'Breaking Changes'
+    label: 'breaking'
+  - title: 'Backwards Compatible Changes'
+    label: 'changes'
+  - title: 'New'
+    label: 'feature'
+  - title: 'Enhancements'
+    label: 'enhancement'
+  - title: 'Bug Fixes'
+    label: 'bug'
+  - title: 'Dependency Updates'
+    label: 'dependencies'
+
+version-resolver:
+  major:
+    labels:
+      - 'removed'
+      - 'breaking'
+  minor:
+    labels:
+      - 'feature'
+      - 'deprecated'
+      - 'changed'
+  patch:
+    labels:
+      - 'bug'
+      - 'dependencies'
+      - 'security'
